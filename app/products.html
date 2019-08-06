@@ -2,14 +2,13 @@
 <html lang="zxx">
 <head>
 	<meta charset="UTF-8">
-	<title>OLIOS</title>
+	<title>Products</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<nav class="leftnav">
+<body style="background-color: #f0f0f0;">
+<nav class="leftnav">
 		<ul class="leftnav__list">
 			<li class="leftnav__logo"><img src="img/logo.png" alt="Logotip" class="logo"></li>
 			<li class="leftnav__item"><a href="/"><svg 
@@ -57,40 +56,64 @@
 		</nav>
 		<a href="products.html" class="categories">show all categories</a>
 	</div>
-	<div class="carousel">
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
+	<div class="products">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col"><h2 class="products__header">products</h2></div>
+				<div class="col-auto products__linkcont"><a href="products.html" class="products__link">living room</a><img src="img/livingroom.png" alt="Living room" class="rightnav__icon"></div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 order1">
+					<a href='seat.html' class="card h415">
+						<div class="card__imgcont">
+							<img src="img/redseat.png" alt="Red seat" class="card__img">
+						</div>
+						<h3 class="card__name">red seat</h3>
+						<p class="card__desc">Lorem ipsum dolor sit amet.</p>
+						<p class="card__price">$45</p>
+					</a>
+				</div>
+				<div class="col-12 col-lg-9 order2">
+					<a href='seat.html' class="card flex-dir">
+						<img src="img/table.png" alt="White Table" class="card__bigimg">
+						<div class="card__righttext"><h3 class="card__name">white table</h3>
+							<p class="card__desc">Lorem ipsum dolor sit amet.</p>
+							<p class="card__price">$350</p></div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 order3">
+					<a href='seat.html' class="card h415">
+						<div class="card__imgcont">
+							<img src="img/blueseat.png" alt="Blue seat" class="card__img">
+						</div>
+						<h3 class="card__name">blue seat</h3>
+						<p class="card__desc">Lorem ipsum dolor sit amet.</p>
+						<p class="card__price">$35</p>
+					</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 order4">
+					<a href='seat.html' class="card flex-dir">
+						<img src="img/bed.png" alt="Modern bed" class="card__bigimg">
+						<div class="card__righttext"><h3 class="card__name">modern bed</h3>
+							<p class="card__desc">Lorem ipsum dolor sit amet.</p>
+							<p class="card__price">$120</p></div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 order5">
+					<a href='seat.html' class="card h415">
+						<div class="card__imgcont">
+							<img src="img/darkseat.png" alt="Dark seat" class="card__img">
+						</div>
+						<h3 class="card__name">dark seat</h3>
+						<p class="card__desc">Lorem ipsum dolor sit amet.</p>
+						<p class="card__price">$50</p>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
-
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>
