@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="bg">
 	<nav class="leftnav">
 		<ul class="leftnav__list">
 			<li class="leftnav__logo"><img src="img/logo.png" alt="Logotip" class="logo"></li>
@@ -26,7 +26,7 @@
 <path fill-rule="evenodd"
  d="M33.000,9.000 L27.905,9.000 C27.868,8.898 27.830,8.797 27.773,8.706 L22.774,0.706 C22.508,0.282 22.037,-0.000 21.500,-0.000 C20.672,-0.000 20.000,0.671 20.000,1.500 C20.000,1.791 20.083,2.063 20.227,2.294 L24.418,9.000 L11.582,9.000 L15.774,2.294 C15.917,2.063 16.000,1.791 16.000,1.500 C16.000,0.671 15.328,-0.000 14.500,-0.000 C13.963,-0.000 13.492,0.282 13.227,0.706 L8.227,8.706 C8.170,8.797 8.132,8.898 8.095,9.000 L3.000,9.000 C1.343,9.000 0.000,10.343 0.000,12.000 L0.000,14.000 C0.000,15.421 0.991,16.604 2.317,16.915 L6.121,29.848 C6.487,31.092 7.638,32.000 9.000,32.000 L27.000,32.000 C28.362,32.000 29.513,31.092 29.879,29.848 L33.683,16.915 C35.009,16.604 36.000,15.421 36.000,14.000 L36.000,12.000 C36.000,10.343 34.657,9.000 33.000,9.000 ZM3.000,12.000 L33.000,12.000 L33.000,14.000 L3.000,14.000 L3.000,12.000 ZM27.000,29.000 L8.999,29.002 L5.470,17.000 L30.530,17.000 L27.000,29.000 Z"/>
 </svg></a></li>
-			<li class="leftnav__item"><a href="search.html"><svg 
+			<li class="leftnav__item"><a href="search.html" class="fillblue"><svg 
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  width="32px" height="32px">
@@ -57,40 +57,35 @@
 		</nav>
 		<a href="products.html" class="categories">show all categories</a>
 	</div>
-	<div class="carousel">
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
-		</div>
-		<div class="carousel__item">
-			<header class="header">
-				<h2 class="header__name">olios</h2>
-				<h3 class="header__desc">newest furniture shop template</h3>
-				<a href="products.html" class="header__btn">view more</a>
-			</header>
+
+	<div class="search">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<form action="" class="search__form">
+						<a href="#" onclick='return false' class="search__clear">&times;</a>
+						<input type="text" id='search__input' class='search__input' value='RED SEAT' placeholder="Input">
+						<label class="search__label" for="search__input">Type product that you are looking for</label>
+					</form>
+				</div>
+				<div class="col">
+					<a href="seat.html" class="search__link"><img src="img/redseat.png" alt="Red seat" class="search__img">
+					<h3 class="search__name">red seat</h3></a>
+				</div>
+				<div class="col">
+					<a href="seat.html" class="search__link"><img src="img/darkseat.png" alt="Dark seat" class="search__img">
+						<h3 class="search__name">dark seat</h3></a>
+				</div>
+				<div class="col-12">
+					<p class="search__result">1 Searched result</p>
+				</div>
+			</div>
 		</div>
 	</div>
+	
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>

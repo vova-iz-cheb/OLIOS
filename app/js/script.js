@@ -8,12 +8,20 @@ $(function() {
 		if($('.rightnav__cont').css('width') == '0px') {
 			$('.rightnav__cont').css('width', '');
 		} else $('.rightnav__cont').css('width', 0);
-	})
-
-	// carousel 
-	$('.carousel').slick({
-		arrows: false,
-		dots: true
 	});
 
+	// carousel 
+	if($('.carousel').length) {
+		$('.carousel').slick({
+			arrows: false,
+			dots: true
+		});
+	};
+
+	// form clear
+	if($('.search__clear').length) {
+		$('.search__clear').click(function() {
+			$('.search__input').val("");
+		});
+	};
 });
