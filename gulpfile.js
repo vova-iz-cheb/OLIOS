@@ -50,10 +50,16 @@ task('prebuild', function() {
     src('app/css/main.min.css')
     .pipe(dest('dist/css'))
 
-    src('app/fonts/**/*')
-    .pipe(dest('dist/fonts'))
+    src('app/css/slick.css')
+    .pipe(dest('dist/css'))
+
+    // src('app/fonts/**/*')
+    // .pipe(dest('dist/fonts'))
 
     src('app/js/script.min.js')
+    .pipe(dest('dist/js'))
+
+    src('app/js/slick.min.js')
     .pipe(dest('dist/js'))
 
     return src('app/*.html')
